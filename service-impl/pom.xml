@@ -11,5 +11,25 @@
 
     <artifactId>service-impl</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.wormogig</groupId>
+            <artifactId>model</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.wormogig</groupId>
+            <artifactId>repo-impl</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.wormogig</groupId>
+            <artifactId>service-abstract</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+    </dependencies>
 
 </project>

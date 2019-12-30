@@ -11,5 +11,12 @@
 
     <artifactId>service-abstract</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.wormogig</groupId>
+            <artifactId>model</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+    </dependencies>
 
 </project>
