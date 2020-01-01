@@ -3,7 +3,6 @@ package wormogig.serviceImpl;
 import org.springframework.stereotype.Service;
 import wormogig.model.Workspace;
 import wormogig.repo.WorkspaceRepo;
-import wormogig.repoImpl.WorkspaceRepoImpl;
 import wormogig.service.WorkspaceService;
 
 import javax.transaction.Transactional;
@@ -16,6 +15,16 @@ public class WorkspaceServiceImpl implements WorkspaceService {
 
     public WorkspaceServiceImpl(WorkspaceRepo workspaceRepo) {
         this.workspaceRepo = workspaceRepo;
+    }
+
+    @Override
+    public void delete(long id) {
+        workspaceRepo.deleteById(id);
+    }
+
+    @Override
+    public void delete(Workspace workspace) {
+        workspaceRepo.delete(workspace);
     }
 
     @Override
