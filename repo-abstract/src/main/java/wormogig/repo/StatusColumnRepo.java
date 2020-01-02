@@ -13,4 +13,5 @@ public interface StatusColumnRepo extends JpaRepository<StatusColumn, Long> {
             nativeQuery = true
     )
     List<StatusColumn> findStatusColumnByWorkspace(long id);
+
 }
